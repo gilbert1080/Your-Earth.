@@ -1,0 +1,237 @@
+Start = input("Would you like to begin your story? Yes or No")
+
+# Starting question
+try:
+  
+  if Start == "Yes" or "yes" or "Y" or "y":
+    print("Crunch... a can is slipped on and launched to the side")
+  
+  else: 
+    exit()
+except ValueError as err:
+  print(err)
+
+
+
+print("It falls into a sewege drain. Where did it come from you may ask?")
+
+input()
+
+print("Well I suppose it's time for a story")
+
+# Variables
+# Karma essentially provides difirent outcomes for path ways
+Karma = 0
+
+# Finding a name to use
+Name = input(" Now now, before we get to that, what is your name? \n")
+
+
+print("What's that? Oh it's you..... Well let me remind you then")
+
+input()
+
+print(" You wake up, to your chilled room. You had accidently left on your air condioner overnight \n")
+
+input()
+
+print("As you take your steps you hear rustiling of a old \n mcdonalds Mc chicken wrapper")
+# First choice C 1
+
+input()
+
+print("What shall you decide to do? \n a) Throw it out the window (It isn't your problem) \n b) dump inside the trash \n c) Take out the trash ")
+# Decions 3 chances to tupe or it exits
+C_1 = input("What shall you do? (3 Chances) \n")
+if C_1 == "a":
+  Karma = Karma - 1
+  print("Karma: " + str(Karma))
+elif C_1 == "b":
+ print("Karma: " + str(Karma))
+elif C_1 == "c":
+  Karma = Karma + 1
+  print("Karma: " + str(Karma))
+  
+else:
+  C_1 = input("What shall you do? (2 Chances) \n")
+  if C_1 == "a":
+    Karma = Karma - 1
+    print("Karma: " + str(Karma))
+  elif C_1 == "b":
+   print("Karma: " + str(Karma))
+  elif C_1 == "c":
+    Karma = Karma + 1
+    print("Karma: " + str(Karma))
+    
+  else: 
+    C_1 = input("What shall you do? (1 Chance) \n")
+    if C_1 == "a":
+      Karma = Karma - 1
+      print("Karma: " + str(Karma))
+    elif C_1 == "b":
+     print("Karma: " + str(Karma))
+    elif C_1 == "c":
+      Karma = Karma + 1
+      print("Karma: " + str(Karma))
+    else:
+      exit("Game over!!!")
+
+print("You put on your clothes and check your fridge and \n see it's time to make a trip to the supermarket")
+
+input()
+
+print(" You head to your garage and the distance from your home and the market is about a 15 minute walk from your house \n")
+
+input()
+
+C_2 = input("a) Drive your Honda Civic \n b) Ride your bicycle /n (3 Chances! \n")
+
+# Decision 2 Going to the market
+
+if C_2 == "a":
+  Karma = Karma - 1
+  print("Karma: " + str(str(Karma)))
+elif C_2 == "b":
+  Karma = Karma + 1
+  print("Karma: " + str(Karma))
+
+else:
+  C_2 = input("a) Drive your Honda Civic \n b) Ride your bicycle /n (2 Chances! \n")
+  if C_2 == "a":
+    Karma = Karma - 1
+    print("Karma: " + str(Karma))
+  
+  elif C_2 == "b":
+    Karma = Karma + 1
+    print("Karma: " + str(Karma))
+  
+  else: 
+# choice 1 adding or subtracting karma
+    C_2 = input("a) Drive your Honda Civic \n b) Ride your bicycle /n (1 Chance! \n")
+    if C_2 == "a":
+      Karma = Karma - 1
+      print("Karma: " + str(Karma))
+    
+    elif C_2 == "b":
+      Karma = Karma + 1
+      print("Karma: " + str(Karma))
+    
+    else:
+      exit()
+
+print(" Now you've arrived at the market, entering and now entering through the allies")
+
+print(" You purchase some questionable goods ( Health wise) and make you the cashier")
+
+print(" Cashier: Would you like a bag with that as well?")
+
+print("You buy the resuable bag and make your way home")
+
+print(" You witness someone throw a plastic bottle onto the ground infront of you")
+
+C_3 = input("Do you \n a) Pick it up \n b) ignore it")
+if C_3 == "a":
+  Karma = Karma + 1
+  print("Karma: " + str(Karma))
+elif C_3 == "b":
+  Karma = Karma - 1
+  print("Karma: " + str(Karma))
+else:
+  C_3 = print("Do you \n a) Pick it up \n b) ignore it")
+  if C_3 == "a":
+   Karma = Karma + 1
+   print("Karma: " + str(Karma))
+  elif C_3 == "b":
+   Karma = Karma - 1
+   print("Karma: " + str(Karma))
+  else:
+   C_3 = print("Do you \n a) Pick it up \n b) ignore it")
+   if C_3 == "a":
+    Karma = Karma + 1
+    print("Karma: " + str(Karma))
+   elif C_3 == "b":
+    Karma = Karma - 1
+    print("Karma: " + str(Karma))
+   else:
+    exit("out of tries")
+
+if Karma > 1:
+  print(" As you go, you recieve a call... You're mother had slipped on garbage outside the house that had piled up.... She had been admited to the hospital nearby ")
+  input()
+  print(" You see, even polluting slightly can help add up to major effects which eventually effect the world around us.")
+  input()
+  print("Two weeks past")
+
+else: 
+  print("As you go home you recieve a call from your mother, you have a nice conversation and tell her you'll speak to her later ")
+
+  
+  print("Two weeks past")
+
+
+
+print("You wake up for another day,")
+# providing diffirent events based on Karma levels
+if Karma <= -3:
+  print("You notice a repugnant smell in your room and once you finally made it off your bed, a rat scurried past you")
+  
+  print("/n You look our your window to see a lack of life and paper bags hanging off trees")
+
+elif Karma >= 3:
+  print(" You wake up fully refreshed to the scent of your mothers cooking. you get up and look out the window to see the wonderful trees and hear the birds sing")
+
+elif Karma >= 2:
+  print("You wake up from your slumber with your mother calling you down stairs... seeming to be a nice start to day")
+elif Karma <= -2:
+  print("you wake up to a foul stench and after about 9 minutes you shamble towards your kitchen to eat something") 
+else: 
+   print(" You mother calls out to you with a yell and some tough coughing which awakens you from your sleep, she seems a bit sick")
+
+print(" You see the state of the backyard and notice it doesn't look to well ")
+C_4 = input(" Clean the trash up outside /n b) it doesn't matter to you c) Toss the trash onto the backyard ")
+if C_4 == "a":
+  Karma = Karma + 1
+  print("Karma: " + str(Karma))
+elif C_4 == "b":
+  Karma = Karma - 1
+  print("Karma: " + str(Karma))
+elif C_4 == "c":
+  Karma = Karma - 2
+  print("Karma: " + str(Karma))
+# this part comes near the ending I'm which all their Karma will decide what happends
+print(" You take it upon yourself to go for a walk")
+
+if Karma <= -5:
+  print("Before not takinf it into account the air becomes noticeably thicker.... almost omnious")
+  input()
+  print("As you walk your mother follows you behind as ypu had forgetten your keys.... but a crunch can be heard")
+  print("This is was one of the qorst ending lossible and showed how there really needs to be something done about problems earth as a whole has been facing as choosing to ignore them would only leads to even worse outcomes like th the one of the story above. Maybe you can try to change things.... You could always.... try again ")
+  exit("How about you try again? Maybe be a little more kinder to earth next time")
+
+
+elif Karma < 5:
+  print(" You hear a yell from your mother, as she comes towards you. You take a look back suprized by how clean it looks outside you ask her to come along and she mentions the jdea of feedings some birds.")
+  print(" You walk with your mother and see a bottle on the sidewalk and decide to pick it up so no one trips on it or no one recycles")
+  print("Ah no crunch this time huh? This was best ending you could've gotten and thos most environmentally friendly one thank you and we hope you enjoyed playing our little game")
+
+  exit(" If would like to see the four other endings try again if not Have a nice day!")
+elif Karma >= 3:
+  print("You hear your mother rushing towards you.. ah by mistake you forgot to take a water out kn this fine sunny day.. you see some kids playing with a plastic bottle throwing it around until one jumped on it and slips... a crunch is heard and out of anger the bottle is kicked into the sewer drain")
+
+  exit("")
+elif Karma <= -3:
+ 
+  print("As you walk alone through the sidewalk you notice filth around you but it's no matter... it isn't your problem until... a crunch is heard under your foot and you launch it into the drain")
+ 
+  input()
+
+  print("Seems like you slipped on a water bottle ... kinda ironic huh?")
+
+  print("This was one of the 5 endings being one of the bad ones... maybe it'd be in your best interest to play again")
+
+  exit("Hope you enjoyed this game of ours!")
+
+else: 
+  print(" You walk on the sidewalk and you head towards the park , but just before that your mother calls yu back to eat. Crunch is heard but you got no clue what thats about wlel it's time to go")
+  print(" This ending was the neutral ending of the story and depending on your chocies you're kinda in the middle")
+  print("Maybe you can try to get one of the four other endings next time huh?")
