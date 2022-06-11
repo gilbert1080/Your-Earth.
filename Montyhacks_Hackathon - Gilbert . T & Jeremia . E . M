@@ -1,4 +1,4 @@
-Start = input("Would you like to begin your story? Yes or No")
+Start = input(" Would you like to begin your story? Yes or No")
 
 # Starting question
 try:
@@ -159,7 +159,9 @@ if Karma > 1:
   print(" As you go, you recieve a call... You're mother had slipped on garbage outside the house that had piled up.... She had been admited to the hospital nearby ")
   input()
   print(" You see, even polluting slightly can help add up to major effects which eventually effect the world around us.")
+  
   input()
+
   print("Two weeks past")
 
 else: 
@@ -171,6 +173,9 @@ else:
 
 
 print("You wake up for another day,")
+
+input()
+
 # providing diffirent events based on Karma levels
 if Karma <= -3:
   print("You notice a repugnant smell in your room and once you finally made it off your bed, a rat scurried past you")
@@ -188,7 +193,7 @@ else:
    print(" You mother calls out to you with a yell and some tough coughing which awakens you from your sleep, she seems a bit sick")
 
 print(" You see the state of the backyard and notice it doesn't look to well ")
-C_4 = input(" Clean the trash up outside /n b) it doesn't matter to you c) Toss the trash onto the backyard ")
+C_4 = input(" Clean the trash up outside \n b) it doesn't matter to you c) Toss the trash onto the backyard ")
 if C_4 == "a":
   Karma = Karma + 1
   print("Karma: " + str(Karma))
@@ -235,3 +240,4 @@ else:
   print(" You walk on the sidewalk and you head towards the park , but just before that your mother calls yu back to eat. Crunch is heard but you got no clue what thats about wlel it's time to go")
   print(" This ending was the neutral ending of the story and depending on your chocies you're kinda in the middle")
   print("Maybe you can try to get one of the four other endings next time huh?")
+    
